@@ -1,0 +1,42 @@
+/*
+Theme Name: WordPress Demo Theme
+Theme URI: https://example.com/wordpress-demo-theme
+Author: Demo Theme Developer
+Author URI: https://example.com
+Description: WordPress Demo Theme is a modern, responsive, and multipurpose WordPress theme designed for demo websites, business websites, blogs, portfolios, online stores, landing pages, and content-driven platforms. It features a clean and flexible layout, customizable colors, accessible navigation, widget-ready areas, and compatibility with modern WordPress features. Built with performance, accessibility, SEO, and responsive design in mind, the theme provides a reusable foundation for different website projects.
+Version: 1.0.0
+Requires at least: 6.6
+Tested up to: 6.9
+Requires PHP: 7.4
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: wordpress-demo-theme
+Domain Path: /languages
+Tags: blog, news, portfolio, e-commerce, grid-layout, one-column, two-columns, three-columns, left-sidebar, right-sidebar, custom-background, custom-logo, custom-menu, featured-images, footer-widgets, full-width-template, sticky-post, threaded-comments, translation-ready, wide-blocks, rtl-language-support
+*/
+
+/*
+-------------------------------------------------------------------------------
+WordPress Demo Theme
+Copyright (C) 2026 Demo Theme Developer.
+
+WordPress Demo Theme is a multipurpose WordPress theme developed as a
+reusable foundation for demonstration, development, customization,
+and deployment across different types of websites.
+
+This theme is distributed under the terms of the
+GNU General Public License version 2 or later.
+
+You are free to use, modify, and redistribute this theme
+in accordance with the terms of the GNU General Public License.
+
+This theme may include third-party assets or components that are
+subject to their respective licenses.
+
+WordPress Demo Theme is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+See the GNU General Public License for more details.
+-------------------------------------------------------------------------------
+*/

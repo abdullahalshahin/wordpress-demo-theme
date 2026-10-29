@@ -1,0 +1,7 @@
+.agents
+.codex
+node_modules/
+vendor/
+.env
+.vscode/
+.idea/

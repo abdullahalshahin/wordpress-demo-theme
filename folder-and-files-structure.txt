@@ -1,0 +1,249 @@
+wordpress-demo-theme/
+│
+├── 404.php
+│   → Displays the 404 Not Found page.
+│
+├── archive.php
+│   → Displays archive listings for posts and other content.
+│   → Serves as a fallback for category, tag, author, and date archives.
+│
+├── comments.php
+│   → Displays WordPress comments and the comment form.
+│   → Supports comment replies and native moderation.
+│
+├── footer.php
+│   → Displays the website footer and closing HTML structure.
+│   → Includes footer menus, widgets, and wp_footer().
+│
+├── front-page.php
+│   → Displays the website's main homepage.
+│
+├── functions.php
+│   → Main theme bootstrap file.
+│   → Loads core, admin, components, and other theme modules.
+│
+├── header.php
+│   → Displays the website header and opening HTML structure.
+│   → Includes branding, navigation, and wp_head().
+│
+├── home.php
+│   → Displays the main blog posts listing page.
+│   → Supports WordPress posts pagination.
+│
+├── index.php
+│   → Main fallback template required by WordPress.
+│   → Used when no more specific template is available.
+│
+├── page.php
+│   → Displays standard WordPress pages.
+│   → Used for About, Contact, Privacy Policy, and other pages.
+│
+├── screenshot.png
+│   → Theme preview image displayed in Appearance → Themes.
+│
+├── search.php
+│   → Displays WordPress search results.
+│   → Supports search result listings and pagination.
+│
+├── searchform.php
+│   → Contains the reusable WordPress search form.
+│
+├── single.php
+│   → Displays an individual WordPress post.
+│   → Uses reusable post components and comment templates.
+│   → Also serves as a fallback for other singular post types.
+│
+├── style.css
+│   → Required WordPress theme stylesheet and metadata file.
+│   → Defines theme name, version, text domain, and other details.
+│
+├── assets/
+│   → Contains all frontend CSS, JavaScript, fonts, and images.
+│
+│   ├── css/
+│   │   → Contains CSS source files and generated stylesheets.
+│   │
+│   │   ├── app.css
+│   │   │   → Contains CSS styles used exclusively in the WordPress admin dashboard.
+│   │   │   → Styles admin pages, settings, forms, and custom admin components.
+│   │   │   → Not loaded on the frontend.
+│   │
+│   │   ├── input.css
+│   │   │   → Main Tailwind CSS source file.
+│   │   │   → Contains Tailwind directives and custom CSS.
+│   │
+│   │   └── style.css
+│   │       → Compiled Tailwind CSS used by the frontend.
+│   │       → Generated during the build process.
+│   │
+│   ├── fonts/
+│   │   → Contains locally hosted website font files.
+│   │
+│   │   ├── Figtree-Medium.woff2
+│   │   │   → Medium-weight Figtree font.
+│   │
+│   │   ├── Figtree-Regular.woff2
+│   │   │   → Regular-weight Figtree font.
+│   │
+│   │   └── Figtree-SemiBold.woff2
+│   │       → Semi-bold Figtree font.
+│   │
+│   ├── images/
+│   │   → Contains website branding and theme images.
+│   │
+│   │   ├── favicon.png
+│   │   │   → Default website favicon asset.
+│   │
+│   │   ├── icon.png
+│   │   │   → General Wordpress Demo Theme brand icon.
+│   │
+│   │   ├── logo-light.png
+│   │   │   → Alternative logo for dark-mode backgrounds.
+│   │
+│   │   └── logo.png
+│   │       → Default Wordpress Demo Theme logo.
+│   │
+│   └── js/
+│       → Contains frontend JavaScript functionality.
+│
+│       ├── app.js
+│       │   → Contains JavaScript used exclusively in the WordPress admin dashboard.
+│       │   → Handles admin settings, forms, and custom admin interactions.
+│       │   → Not loaded on the frontend.
+│       │
+│       ├── main.js
+│       │   → Handles common website UI interactions.
+│       │   → Includes menus, dropdowns, and other behaviors.
+│       │
+│       └── theme-init.js
+│           → Initializes theme preferences and appearance.
+│           → Can apply light/dark mode before page rendering.
+│
+├── inc/
+│   → Contains reusable PHP modules and theme functionality.
+│
+│   ├── helpers.php
+│   │   → Contains small reusable PHP helper functions.
+│   │   → Avoids repeating common logic across templates.
+│   │
+│   ├── admin/
+│   │   → Contains WordPress admin dashboard functionality.
+│   │   → Organizes admin menus, settings, and configuration.
+│   │
+│   │   ├── admin-init.php
+│   │   │   → Main admin initialization file.
+│   │   │   → Loads and connects the required admin modules.
+│   │   │
+│   │   ├── customizer.php
+│   │   │   → Registers WordPress Customizer settings and controls.
+│   │   │   → Supports live preview of theme appearance options.
+│   │   │
+│   │   ├── menu.php
+│   │   │   → Registers theme-related admin menus and submenus.
+│   │   │
+│   │   ├── sanitize.php
+│   │   │   → Contains settings sanitization and validation functions.
+│   │   │   → Ensures saved theme options contain valid data.
+│   │   │
+│   │   ├── settings.php
+│   │   │   → Registers theme settings, fields, and default values.
+│   │   │   → Uses WordPress native settings APIs.
+│   │   │
+│   │   └── pages/
+│   │       → Contains admin page layouts and interface markup.
+│   │       │
+│   │       ├── dashboard.php
+│   │       │   → Displays the backend admin dashboard.
+│   │       │
+│   │       ├── settings.php
+│   │       │   → Displays the theme settings interface.
+│   │       │   → Contains General, Header, Footer,
+│   │       │     Components, and Advanced settings sections.
+│   │
+│   ├── components/
+│   │   → Contains reusable frontend UI components.
+│   │   → Maintains consistent layouts across theme templates.
+│   │
+│   │   ├── post-card.php
+│   │   │   → Displays a reusable blog post card.
+│   │   │   → Shows image, title, excerpt, and post metadata.
+│   │
+│   │   ├── breadcrumb.php
+│   │   │   → Displays breadcrumb navigation.
+│   │   │   → Helps visitors navigate the website hierarchy.
+│   │
+│   │   ├── pagination.php
+│   │   │   → Displays reusable pagination controls.
+│   │   │   → Supports navigation between listing pages.
+│   │
+│   │   ├── post-header.php
+│   │   │   → Displays the heading area of individual blog posts.
+│   │   │   → Shows title, author, date, and post information.
+│   │
+│   │   └── website-header.php
+│   │       → Displays reusable website header components.
+│   │       → Includes branding, navigation, and header controls.
+│   │
+│   ├── core/
+│   │   → Contains essential theme initialization functionality.
+│   │   → Integrates the theme with WordPress native features.
+│   │
+│   │   ├── enqueue-assets.php
+│   │   │   → Registers and enqueues theme CSS and JavaScript.
+│   │   │   → Loads assets through WordPress enqueue APIs.
+│   │
+│   │   ├── hooks.php
+│   │   │   → Registers general WordPress actions and filters.
+│   │   │   → Connects theme features to WordPress events.
+│   │
+│   │   └── theme-setup.php
+│   │       → Initializes WordPress theme features.
+│   │       → Registers menus, thumbnails, title support,
+│   │         custom logos, HTML5 support, and translations.
+│   │
+│   └── user/
+│       → Contains frontend user interface and integrations.
+│       → Works with native WordPress users and permissions.
+│
+│       ├── authentication.php
+│       │   → Provides frontend authentication form integration.
+│       │   → Secure authentication processing uses native APIs.
+│       │
+│       ├── bookmarks.php
+│       │   → Displays or integrates user bookmark functionality.
+│       │   → Persistent bookmark handling belongs in the plugin.
+│       │
+│       ├── likes.php
+│       │   → Displays or integrates post like/unlike controls.
+│       │   → Persistent like handling belongs in the plugin.
+│       │
+│       └── pages/
+│           → Contains reusable frontend user dashboard views.
+│
+│           ├── activities.php
+│           │   → Displays the user's recent account activities.
+│           │   → Shows posts, likes, and bookmarks.
+│           │
+│           ├── bookmarks.php
+│           │   → Displays the user's saved blog posts.
+│           │   → Allows users to view and remove bookmarked content.
+│           │
+│           ├── dashboard.php
+│           │   → Contains the main frontend dashboard layout.
+│           │   → Loads dashboard navigation and selected sections.
+│           │
+│           ├── posts.php
+│           │   → Displays the user's submitted blog posts.
+│           │   → Provides post management interfaces.
+│           │
+│           └── profile.php
+│               → Displays user profile details and editing forms.
+│               → Allows permitted account information updates.
+│
+└── languages/
+    → Contains theme translation resources.
+    → Supports WordPress localization and multilingual websites.
+
+    └── wordpress-demo-theme.pot
+        → Translation template for theme text strings.
+        → Uses the wordpress-demo-theme text domain.
